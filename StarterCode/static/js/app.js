@@ -102,6 +102,10 @@ function init() {
     })
 }
 
+function optionChanged(newSample) {
+    buildCharts(newSample);
+    buildMetadata(newSample);
+}
 
 // Initialize dahshboard
 init()
