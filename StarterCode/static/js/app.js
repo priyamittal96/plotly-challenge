@@ -1,3 +1,12 @@
+function buildMetadata(sample) {
+    
+}
+
+function buildCharts(sample){
+
+}
+
+
 function init() {
     console.log("Hello World!");
 
@@ -19,7 +28,7 @@ function init() {
         var firstSample = sampleNames[0];
         console.log(firstSample);
 
-        
+
     })
 }
 
