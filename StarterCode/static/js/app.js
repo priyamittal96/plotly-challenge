@@ -2,7 +2,7 @@ function buildMetadata(sample) {
     d3.json("../samples.json").then(function(data) {
         var metadata = data.metadata;
         var resultsArray = metadata.filter(function(data) {
-            return data.id === sample;
+            return data.id == sample;
         })
         var result = resultsArray[0];
         var PANEL = d3.select("#sample-metadata");
@@ -11,7 +11,7 @@ function buildMetadata(sample) {
         PANEL.html("");
 
         Object.entries(result).forEach(function([key, value]) {
-            console.log(key, value);
+            PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`)
         })
     }) 
 }
